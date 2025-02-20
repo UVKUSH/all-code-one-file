@@ -1,0 +1,26 @@
+{
+    "name": "all-code-one-file",
+    "displayName": "All Code One File",
+    "description": "Merges multiple code files into a single file based on folder, extension, and token limit.",
+    "version": "1.0.0",
+    "engines": {
+      "vscode": "^1.70.0"
+    },
+    "categories": ["Other"],
+    "activationEvents": ["onCommand:all-code-one-file.mergeLibraryFiles"],
+    "main": "./extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "all-code-one-file.mergeLibraryFiles",
+          "title": "All Code One File: Merge Files"
+        }
+      ]
+    },
+    "scripts": {
+  "vscode:prepublish": "echo 'Prepublish script running...'"
+},
+    "devDependencies": {
+      "vsce": "^2.7.0"
+    }
+  }

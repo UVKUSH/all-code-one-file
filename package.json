@@ -1,26 +1,61 @@
 {
-    "name": "all-code-one-file",
-    "displayName": "All Code One File",
-    "description": "Merges multiple code files into a single file based on folder, extension, and token limits.",
-    "version": "1.0.0",
-    "engines": {
-      "vscode": "^1.70.0"
-    },
-    "categories": ["Other"],
-    "activationEvents": ["onCommand:all-code-one-file.mergeLibraryFiles"],
-    "main": "./extension.js",
-    "contributes": {
-      "commands": [
-        {
-          "command": "all-code-one-file.mergeLibraryFiles",
-          "title": "All Code One File: Merge Files"
-        }
-      ]
-    },
-    "scripts": {
-  "vscode:prepublish": "echo 'Prepublish script running...'"
-},
-    "devDependencies": {
-      "vsce": "^2.7.0"
-    }
-  }
+  "name": "all-code-one-file",
+  "displayName": "All Code One File",
+  "description": "Merges all code files in selected folders into a single file for LLMs",
+  "version": "1.0.0",
+  "publisher": "uvkush",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UVKUSH/all-code-one-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UVKUSH/all-code-one-file/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "icon": "icon.png",
+  "categories": ["Programming Languages", "AI"],
+  "keywords": [
+  "merge",
+  "combine",
+  "LLM",
+  "AI",
+  "ChatGPT",
+  "Claude",
+  "OpenAI",
+  "code",
+  "VSCode",
+  "files",
+  "batch",
+  "token",
+  "automation",
+  "developer tools",
+  "productivity",
+  "machine learning",
+  "GPT",
+  "text processing",
+  "code organization",
+  "file merger"
+],
+
+  "galleryBanner": {
+    "color": "#007acc",
+    "theme": "dark"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "all-code-one-file.mergeLibraryFiles",
+        "title": "All Code One File: Merge Files"
+      }
+    ]
+  },
+  "activationEvents": ["onCommand:all-code-one-file.mergeLibraryFiles"],
+  "main": "./extension.js",
+  "scripts": {
+    "vscode:prepublish": "echo 'Prepublish script running...'"
+  },
+  "dependencies": {}
+}

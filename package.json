@@ -1,7 +1,7 @@
 {
     "name": "all-code-one-file",
     "displayName": "All Code One File",
-    "description": "Merges multiple code files into a single file based on folder, extension, and token limit.",
+    "description": "Merges multiple code files into a single file based on folder, extension, and token limits.",
     "version": "1.0.0",
     "engines": {
       "vscode": "^1.70.0"
